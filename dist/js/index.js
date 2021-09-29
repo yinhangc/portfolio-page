@@ -54,6 +54,7 @@ const timelineAnimation = () => {
       entries.forEach((entry) => {
         if (entry.isIntersecting) {
           if (window.matchMedia("(min-width: 900px)").matches) {
+            console.log('hi');
             slowLoop();
           } else {
             showTime(entry.target);
@@ -64,8 +65,12 @@ const timelineAnimation = () => {
         }
       });
     },
-    // Options 
-    { threshold: 1, rootMargin: "0px 0px -100px 0px" }
+    // Options (100px before reaching timeline)
+    {
+      threshold: 1,
+      // 80px before viewport reach elements
+      rootMargin: "0px 0px 80px 0px"
+    }
   );
 
   if (window.matchMedia("(min-width: 900px)").matches) {
