@@ -1,0 +1,75 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --ff-primary: 'Nunito', sans-serif;
+  --ff-secondary: 'Playfair Display', serif;
+  --fw-reg: 300;
+  --fw-bold: 800;
+  --clr-primary: #022e57;
+  --clr-secondary: #edf7fa;
+  --clr-accent: #005a8d;
+
+  --fs-h1: 6.7rem;
+  --fs-h2: 3.8rem;
+  --fs-h3: 25px; // Only appear in work section
+  --fs-body: 1.6rem;
+  --bs: 0 0.8rem 2.4rem rgba(149, 157, 165, 0.2);
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: 62.5%; // 1rem = 10px
+
+  @media (max-width: 700px) {
+    font-size: 50%;
+  }
+}
+
+body {
+  background: var(--clr-secondary);
+  color: var(--clr-primary);
+  font-family: var(--ff-primary);
+  font-size: var(--fs-body);
+  line-height: 1.6;
+}
+
+section {
+  padding: 8rem 4rem;
+  max-width: 1200px;
+  margin: 0 auto;
+
+  @media (max-width: 400px) {
+    padding: 5rem 1rem;
+  }
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+/* Typography */
+h1,
+h2,
+h3 {
+  line-height: 1;
+  margin: 0;
+  font-family: var(--ff-secondary);
+}
+
+h1 {
+  font-size: var(--fs-h1);
+}
+
+h2 {
+  font-size: var(--fs-h2);
+  text-align: center;
+  letter-spacing: 1px;
+  margin-bottom: 4rem;
+}

@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700;800;900&family=Playfair+Display:wght@400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/main.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <title>Emily Cheng</title>
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="header">
+      <div class="header__logo">&lt;emilycheng&gt;</div>
+      <button class="header__nav-toggle">
+        <span class="header__hamburger"></span>
+      </button>
+      <div class="nav">
+        <ul class="nav__list">
+          <li class="nav__item">
+            <a href="#home" class="nav__link">Home</a>
+          </li>
+          <li class="nav__item">
+            <a href="#about" class="nav__link">About</a>
+          </li>
+          <li class="nav__item">
+            <a href="#work" class="nav__link">Work</a>
+          </li>
+          <li class="nav__item">
+            <a href="#contact" class="nav__link">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </header>
+
+    <!-- Home -->
+    <section class="home" id="home">
+      <div class="home__img-container animate__animated appearOnScroll">
+        <img src="img/portrait.png" alt="My portrait" class="home__img" />
+      </div>
+      <h1 class="home__title animate__animated appearOnScroll">
+        Hello, I'm <strong>Emily Cheng</strong>
+      </h1>
+      <p class="home__subtitle animate__animated appearOnScroll">
+        Aspired to be a developer
+      </p>
+    </section>
+
+    <!-- About -->
+    <section class="about" id="about">
+      <h2>About Me</h2>
+      <div class="timeline">
+        <div class="timeline__line">
+          <span class="timeline__innerline"></span>
+        </div>
+        <ul class="timeline__list">
+          <li class="timeline__item">
+            <span class="timeline__point"></span>
+            <span class="timeline__date">Jan 2020</span>
+            <p class="timeline__text">
+              1st time learning programming <strong>(VBA)</strong> from my major
+              course and discover my interest in it
+            </p>
+          </li>
+          <li class="timeline__item">
+            <span class="timeline__point"></span>
+            <span class="timeline__date">Sept 2020</span>
+            <p class="timeline__text">
+              Learn <strong>Python</strong> from my major course: Python
+              Programming for Business Analytics
+            </p>
+          </li>
+          <li class="timeline__item">
+            <span class="timeline__point"></span>
+            <span class="timeline__date">Jan 2021</span>
+            <p class="timeline__text">
+              Learn <strong>Java</strong> from my major course: Internet
+              Application Development
+            </p>
+          </li>
+          <li class="timeline__item">
+            <span class="timeline__point"></span>
+            <span class="timeline__date">Jun 2021</span>
+            <p class="timeline__text">
+              Focus on learning <strong>front-end web development</strong> in
+              summer holiday <br />(<u>Tools used</u>: HTML/CSS, SCSS,
+              JavaScript, React)
+            </p>
+          </li>
+          <li class="timeline__item">
+            <span class="timeline__point"></span>
+            <span class="timeline__date">Now</span>
+            <p class="timeline__text">Learning <strong>C++</strong></p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- My work -->
+    <section class="work" id="work">
+      <h2>My Work</h2>
+      <div class="work__container">
+        <div class="work__item animate__animated appearOnScroll">
+          <a
+            class="work__link"
+            href="https://yinhangc.github.io/book-landing-page/"
+            target="_blank"
+          >
+            <img
+              class="work__img"
+              data-src="img/book-landing.png"
+              alt="Book landing page"
+            />
+            <div class="work__overlay">
+              <h3>Book landing page</h3>
+              <ul class="work__description">
+                <li><strong>Tools</strong>: HTML, SCSS, JS, Bootstrap-Grid</li>
+                <li>
+                  <strong>Description</strong>: Landing page allows me to put my
+                  HTML/SCSS skills in practice.
+                </li>
+              </ul>
+            </div>
+          </a>
+        </div>
+        <div class="work__item animate__animated appearOnScroll">
+          <a
+            class="work__link"
+            href="https://yinhangc.github.io/calculator/"
+            target="_blank"
+          >
+            <img
+              class="work__img"
+              data-src="img/calculator.png"
+              alt="Calculator"
+            />
+            <div class="work__overlay">
+              <h3>Simple Calculator</h3>
+              <ul class="work__description">
+                <li><strong>Tools</strong>: HTML, CSS, React</li>
+                <li>
+                  <strong>Description</strong>: Calculator is a beginner task
+                  for me to learn React.
+                </li>
+              </ul>
+            </div>
+          </a>
+        </div>
+        <div class="work__item animate__animated appearOnScroll">
+          <a
+            class="work__link"
+            href="https://yinhangc.github.io/to-do-app/"
+            target="_blank"
+          >
+            <img class="work__img" data-src="img/to-do.png" alt="To-do app" />
+            <div class="work__overlay">
+              <h3>To-do App</h3>
+              <ul class="work__description">
+                <li><strong>Tools</strong>: HTML, SCSS, React</li>
+                <li>
+                  <strong>Description</strong>: To-do App is also one of the
+                  beginner React projects and it makes use of local storage to
+                  store the data.
+                </li>
+              </ul>
+            </div>
+          </a>
+        </div>
+        <div class="work__item animate__animated appearOnScroll">
+          <a
+            class="work__link"
+            href="https://yinhangc.github.io/weather-app/"
+            target="_blank"
+          >
+            <img
+              class="work__img"
+              data-src="img/weather-app.png"
+              alt="Weather app"
+            />
+            <div class="work__overlay">
+              <h3>Weather App</h3>
+              <ul class="work__description">
+                <li>
+                  <strong>Tools</strong>: HTML, SCSS, React-Bootstrap, React
+                </li>
+                <li>
+                  <strong>Description</strong>: Weather App is a React project
+                  which allows me to practice using API (OpenWeatherMap):
+                  fetching & handling data.
+                </li>
+              </ul>
+            </div>
+          </a>
+        </div>
+        <div class="work__item animate__animated appearOnScroll">
+          <a
+            class="work__link"
+            href="https://skateboard-shop-app.herokuapp.com/"
+            target="_blank"
+          >
+            <img
+              class="work__img"
+              data-src="img/skateboard-shop.png"
+              alt="Skateboard shop"
+            />
+            <div class="work__overlay">
+              <h3>Skateboard Shop</h3>
+              <ul class="work__description">
+                <li>
+                  <strong>Tools</strong>: HTML, CSS, React-Bootstrap, React,
+                  MongoDB, Express.js, Node.js
+                </li>
+                <li>
+                  <strong>Description</strong>: After taking part of the MERN
+                  stack course from Udemy, I try to create an e-commerce app for
+                  practice.
+                </li>
+              </ul>
+              <p class="work__description--text">
+                (Sorry that this app is not completed yet 🙏🏽)
+              </p>
+            </div>
+          </a>
+        </div>
+
+        <div class="work__item animate__animated appearOnScroll">
+          <a
+            class="work__link"
+            href="https://codepen.io/yinhangc"
+            target="_blank"
+          >
+            <img
+              class="work__img work__img--question-mark"
+              data-src="img/question-mark.png"
+              alt="Skateboard shop"
+            />
+            <div class="work__overlay">
+              <h3>
+                <svg>
+                  <use xlink:href="img/sprite.svg#icon-codepen"></use>
+                </svg>
+                CodePen
+              </h3>
+              <ul class="work__description">
+                <li>See more of my work on Codepen !</li>
+              </ul>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="contact" id="contact">
+      <h2>Contact</h2>
+      <ul class="contact__box">
+        <li
+          class="contact__item animate__animated appearOnScroll"
+          data-text="Email&nbsp;Me!"
+        >
+          <a
+            href="mailto: yinhang265@gmail.com"
+            class="contact__link"
+            target="_blank"
+          >
+            <svg><use xlink:href="img/sprite.svg#icon-mail4"></use></svg>
+          </a>
+        </li>
+        <li
+          class="contact__item animate__animated appearOnScroll"
+          data-text="Codepen"
+        >
+          <a
+            href="https://codepen.io/yinhangc"
+            class="contact__link"
+            target="_blank"
+          >
+            <svg><use xlink:href="img/sprite.svg#icon-codepen"></use></svg>
+          </a>
+        </li>
+        <li
+          class="contact__item animate__animated appearOnScroll"
+          data-text="Github"
+        >
+          <a
+            href="https://github.com/yinhangc"
+            class="contact__link"
+            target="_blank"
+          >
+            <svg><use xlink:href="img/sprite.svg#icon-github"></use></svg>
+          </a>
+        </li>
+      </ul>
+    </section>
+    <script src="js/index.js"></script>
+  </body>
+</html>
