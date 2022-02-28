@@ -69,6 +69,15 @@
     text-align: left;
     opacity: 0;
     transition: 0.8s ease-in-out;
+
+    a,
+    a:visited {
+      color: var(--clr-primary);
+    }
+
+    a:hover {
+      color: #ff2442;
+    }
   }
 }
 
